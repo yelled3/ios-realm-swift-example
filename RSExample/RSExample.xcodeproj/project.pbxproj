@@ -12,6 +12,9 @@
 		30DB2EE71B3308CE00DEB160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DB2EE51B3308CE00DEB160 /* Main.storyboard */; };
 		30DB2EE91B3308CE00DEB160 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DB2EE81B3308CE00DEB160 /* Images.xcassets */; };
 		30DB2EF81B3308CE00DEB160 /* RSExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DB2EF71B3308CE00DEB160 /* RSExampleTests.swift */; };
+		30DB2F041B330FA300DEB160 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DB2F031B330FA300DEB160 /* Models.swift */; };
+		30DB2F0C1B33103D00DEB160 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DB2F0B1B33103D00DEB160 /* Helper.swift */; };
+		30DB2F101B3312E900DEB160 /* MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = 30DB2F0F1B3312E900DEB160 /* MOCK_DATA.json */; };
 		4DF631C94046311867B65FAE /* Pods_RSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB28B7F9AAA8BA47CB1B668 /* Pods_RSExample.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8204455AD0540048ED99D101 /* Pods_RSExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE76F433E0AC0277A31B4130 /* Pods_RSExampleTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -36,6 +39,9 @@
 		30DB2EF11B3308CE00DEB160 /* RSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DB2EF61B3308CE00DEB160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30DB2EF71B3308CE00DEB160 /* RSExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSExampleTests.swift; sourceTree = "<group>"; };
+		30DB2F031B330FA300DEB160 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		30DB2F0B1B33103D00DEB160 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		30DB2F0F1B3312E900DEB160 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
 		51E7A889EA9D1FE1B8369256 /* Pods-RSExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSExampleTests/Pods-RSExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5AB28B7F9AAA8BA47CB1B668 /* Pods_RSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		828EB68C2619679261DAC48F /* Pods-RSExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSExampleTests/Pods-RSExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,9 +104,12 @@
 			children = (
 				30DB2EE11B3308CE00DEB160 /* AppDelegate.swift */,
 				30DB2EE31B3308CE00DEB160 /* ViewController.swift */,
+				30DB2F031B330FA300DEB160 /* Models.swift */,
 				30DB2EE51B3308CE00DEB160 /* Main.storyboard */,
 				30DB2EE81B3308CE00DEB160 /* Images.xcassets */,
 				30DB2EDF1B3308CE00DEB160 /* Supporting Files */,
+				30DB2F0B1B33103D00DEB160 /* Helper.swift */,
+				30DB2F0F1B3312E900DEB160 /* MOCK_DATA.json */,
 			);
 			path = RSExample;
 			sourceTree = "<group>";
@@ -227,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30DB2F101B3312E900DEB160 /* MOCK_DATA.json in Resources */,
 				30DB2EE71B3308CE00DEB160 /* Main.storyboard in Resources */,
 				30DB2EE91B3308CE00DEB160 /* Images.xcassets in Resources */,
 			);
@@ -339,8 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30DB2F041B330FA300DEB160 /* Models.swift in Sources */,
 				30DB2EE41B3308CE00DEB160 /* ViewController.swift in Sources */,
 				30DB2EE21B3308CE00DEB160 /* AppDelegate.swift in Sources */,
+				30DB2F0C1B33103D00DEB160 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

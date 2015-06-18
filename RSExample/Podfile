@@ -4,10 +4,12 @@
 use_frameworks!
 
 target 'RSExample' do
-	pod 'RealmSwift' 
+	pod 'RealmSwift'
+	pod 'SwiftyJSON', '~> 2.2.0'
 end
 
 target 'RSExampleTests' do
-	pod 'RealmSwift' 
+	pod 'RealmSwift'
+	pod 'SwiftyJSON', '~> 2.2.0'
 end
 
